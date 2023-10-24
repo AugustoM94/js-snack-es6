@@ -30,70 +30,64 @@ const segnaposti = listaVip.map((ospite, index) => ({
   const studenti = [
 
         {
-            id: 78,
-            nome: 'Augusto Rosso',
-            sommaVoti: 78,
+            id: 213 ,
+            nome: 'Marco della Rovere',
+            Grades: 78,
             
         },
 
         {
-            id: 200,
-            nome: 'Giusy Verde',
-            sommaVoti: 100,
+            id: 213,
+            nome: 'Paola Cortellessa',
+            Grades: 96,
             
         },
         {
-            id: 47,
-            nome: 'Vito Loria',
-            sommaVoti: 65,
+            id: 250,
+            nome: 'Andrea Mantegna',
+            Grades: 48,
             
         },
         {
-            id: 23,
-            nome: 'Francesco Conte',
-            sommaVoti: 78,
+            id: 145,
+            nome: ' Gaia Borromini',
+            Grades: 74,
             
         },
         {
-            id: 157,
-            nome: 'Valentina Vignali',
-            sommaVoti: 60,
+            id: 196,
+            nome: 'Luigi Grimaldello',
+            Grades: 68,
             
         },
         {
-            id: 78,
+            id: 102,
             nome: 'Bea Bei',
-            sommaVoti: 74,
+            Grades: 74,
             
         },
         {
             id: 153,
-            nome: 'Belen Rodriguez',
-            sommaVoti: 83,
+            nome: 'Piero della Francesca',
+            Grades: 50,
             
         },
         {
-            id: 98,
-            nome: 'Gue Pegueno',
-            sommaVoti: 91,
+            id: 120,
+            nome: 'Francesca da Polenta',
+            Grades: 84,
             
         },
-        {
-            id: 126,
-            nome: 'Megan Fox',
-            sommaVoti: 99,
-            
-        },
-  ]
+    ]
 
   const nuovaAula = studenti.map((el)=>(el.nome.toLocaleUpperCase()));
 
   console.log(nuovaAula);
 
-  const studentiPromossi = studenti.filter((element)=> element.sommaVoti > 70);
+  const studentiPromossi = studenti.filter((element)=> element.Grades > 70);
 
   console.log(studentiPromossi);
 
-  const studentiTop = studenti.filter(element => element.sommaVoti > 70 && element.id > 120);
+  const studentiTop = studenti.filter(element => element.Grades > 70 && element.id > 120);
 
   console.log(studentiTop);
