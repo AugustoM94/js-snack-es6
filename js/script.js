@@ -30,56 +30,56 @@ const segnaposti = listaVip.map((ospite, index) => ({
   const studenti = [
 
         {
-            id: 33818,
+            id: 78,
             nome: 'Augusto Rosso',
             sommaVoti: 78,
             
         },
 
         {
-            id: 1991,
+            id: 200,
             nome: 'Giusy Verde',
             sommaVoti: 100,
             
         },
         {
-            id: 87415,
+            id: 47,
             nome: 'Vito Loria',
             sommaVoti: 65,
             
         },
         {
-            id: 96321,
+            id: 23,
             nome: 'Francesco Conte',
             sommaVoti: 78,
             
         },
         {
-            id: 1809,
+            id: 157,
             nome: 'Valentina Vignali',
             sommaVoti: 60,
             
         },
         {
-            id: 2023,
+            id: 78,
             nome: 'Bea Bei',
             sommaVoti: 74,
             
         },
         {
-            id: 2004,
+            id: 153,
             nome: 'Belen Rodriguez',
             sommaVoti: 83,
             
         },
         {
-            id: 4152,
+            id: 98,
             nome: 'Gue Pegueno',
             sommaVoti: 91,
             
         },
         {
-            id: 73773,
+            id: 126,
             nome: 'Megan Fox',
             sommaVoti: 99,
             
@@ -89,3 +89,11 @@ const segnaposti = listaVip.map((ospite, index) => ({
   const nuovaAula = studenti.map((el)=>(el.nome.toLocaleUpperCase()));
 
   console.log(nuovaAula);
+
+  const studentiPromossi = studenti.filter((element)=> element.sommaVoti > 70);
+
+  console.log(studentiPromossi);
+
+  const studentiTop = studenti.filter(element => element.sommaVoti > 70 && element.id > 120);
+
+  console.log(studentiTop);
