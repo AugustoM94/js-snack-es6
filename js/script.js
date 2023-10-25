@@ -189,6 +189,18 @@ console.log(footballTeam)
 
 
 
+const newFootballTeam = footballTeam.map(({ name, falliSubiti }) => ({
+    name,
+    falliSubiti,
+}));
+
+   console.log(newFootballTeam)
+
+
+
+
+
+
 
 function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
