@@ -1,3 +1,6 @@
+
+//#SNACK1
+
 const listaVip = [ 
     'Brad Pitt', 
     'Johnny Depp', 
@@ -91,3 +94,41 @@ const segnaposti = listaVip.map((ospite, index) => ({
   const studentiTop = studenti.filter(element => element.Grades > 70 && element.id > 120);
 
   console.log(studentiTop);
+
+
+
+  //#SNACK3
+  
+  /*Creare un array di oggetti:
+  Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
+  Stampare in console la bici con peso minore utilizzando destructuring e template literal*/
+
+  const bici_da_corsa = [
+
+        {
+            name: 'Grizl 8 1by',
+            peso: 10.46,
+
+        },
+        {
+            name: 'Licorne - Mountain bike ',
+            peso: 22,
+            
+        },
+        {
+            name: 'Winora',
+            peso: 16.50,
+            
+        }
+  ]
+
+  let biciPesoMinore = bici_da_corsa[0];
+  let biciclette;
+
+  for (biciclette of bici_da_corsa) {
+    if (bici_da_corsa.peso < biciPesoMinore.peso) {
+      biciPesoMinore = bici_da_corsa;
+    }
+  }
+
+  console.log(`La bici con peso minore è ${biciPesoMinore.name} con un peso di ${biciPesoMinore.peso} kg.`);
