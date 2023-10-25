@@ -151,39 +151,38 @@ const footballTeam = [
     {
         name: 'Juventus',
         puntiFatti: 0,
-        falliFatti: 0,
+        falliSubiti: 0,
     },
     {
         name: 'Milan',
         puntiFatti: 0,
-        falliFatti: 0,
+        falliSubiti: 0,
     },
     {
         name: 'Lazio',
         puntiFatti: 0,
-        falliFatti: 0,
+        falliSubiti: 0,
     },
     {
         name: 'Lipsia',
         puntiFatti: 0,
-        falliFatti: 0,
+        falliSubiti: 0,
     },
     {
         name: 'Arsenal',
         puntiFatti: 0,
-        falliFatti: 0,
+        falliSubiti: 0,
     },
     {
         name: 'Barcellona',
         puntiFatti: 0,
-        falliFatti: 0,
+        falliSubiti: 0,
     },
 ]
-
-for (let i = 0; i < footballTeam.length; i++) {
-    footballTeam[i].puntiFatti = getRandomNumber(0, 114);
-    footballTeam[i].falliFatti = getRandomNumber(0, 1000); 
-}
+footballTeam.forEach((element) => {
+    element.puntiFatti = getRandomNumber(0, 114);
+    element.falliSubiti = getRandomNumber(0, 1000); 
+})
 
 console.log(footballTeam)
 
